@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.codexbar-panel" path="/org/gnome/shell/extensions/codexbar-panel/">
+    <key name="merge-icons" type="b">
+      <default>true</default>
+      <summary>Merge icons</summary>
+      <description>Use a single top bar button with a provider switcher instead of one button per provider.</description>
+    </key>
+  </schema>
+</schemalist>

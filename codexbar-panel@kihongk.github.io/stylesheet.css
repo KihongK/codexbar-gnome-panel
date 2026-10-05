@@ -1,0 +1,31 @@
+.codexbar-panel { spacing: 0; }
+.codexbar-segment { spacing: 4px; }
+.codexbar-segment-gap { margin-left: 10px; }
+.codexbar-value { font-feature-settings: "tnum"; font-weight: 600; }
+.codexbar-dim { color: rgba(255, 255, 255, 0.55); }
+.codexbar-warning { color: #f5a623; }
+.codexbar-error { color: #ff7b72; font-size: 0.9em; }
+
+.codexbar-card { padding: 10px 16px 12px; }
+.codexbar-card-header { spacing: 8px; }
+.codexbar-title { font-weight: bold; font-size: 1.1em; }
+.codexbar-plan { color: rgba(255, 255, 255, 0.65); }
+.codexbar-split { spacing: 12px; }
+.codexbar-meta { font-size: 0.88em; color: rgba(255, 255, 255, 0.6); font-feature-settings: "tnum"; }
+
+.codexbar-window { spacing: 4px; margin-top: 12px; }
+.codexbar-window-label { font-weight: bold; }
+.codexbar-track { height: 7px; border-radius: 4px; background-color: rgba(255, 255, 255, 0.14); }
+.codexbar-fill { height: 7px; border-radius: 4px; background-color: -st-accent-color; }
+.codexbar-pace { width: 3px; height: 7px; border-radius: 1px; background-color: #34c759; }
+
+.codexbar-extras { spacing: 3px; margin-top: 12px; padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.codexbar-extra { font-size: 0.92em; font-feature-settings: "tnum"; }
+
+.codexbar-switcher-item { padding: 6px 10px 2px; }
+.codexbar-switcher { spacing: 4px; }
+.codexbar-tab { padding: 6px 4px; border-radius: 10px; }
+.codexbar-tab:hover { background-color: rgba(255, 255, 255, 0.08); }
+.codexbar-tab-active, .codexbar-tab-active:hover { background-color: -st-accent-color; color: -st-accent-fg-color; }
+.codexbar-tab-label { font-size: 0.8em; margin-top: 3px; }
+.codexbar-overview-row { padding: 8px 16px; }

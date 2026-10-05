@@ -1,0 +1,14 @@
+{
+  "uuid": "codexbar-panel@kihongk.github.io",
+  "name": "CodexBar Panel",
+  "description": "Mac-style CodexBar usage in the GNOME top bar: quota bars, pace, credits, reset credits and local spending, merged or one button per provider. Requires the CodexBar Linux desktop app (codexbar-linux).",
+  "shell-version": [
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "https://github.com/KihongK/codexbar-gnome-panel",
+  "settings-schema": "org.gnome.shell.extensions.codexbar-panel"
+}
