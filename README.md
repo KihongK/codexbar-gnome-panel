@@ -9,6 +9,10 @@ Linux desktop app (`codexbar-linux`). The desktop app owns provider selection,
 polling, authentication and notifications; this extension only reads its local
 snapshot (`codexbar-linux --snapshot`), so it adds no extra provider API calls.
 
+| Merge icons (Overview) | One button per provider |
+| :---: | :---: |
+| <img src="docs/merged-overview.png" width="380" alt="Merged top bar button with Overview switcher"> | <img src="docs/separate-codex.png" width="380" alt="Separate top bar buttons with the Codex menu open"> |
+
 ## Features
 
 - **Merge icons** (default): one top bar button showing every provider, with a

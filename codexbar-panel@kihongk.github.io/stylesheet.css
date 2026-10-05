@@ -3,8 +3,8 @@
 .codexbar-segment-gap { margin-left: 10px; }
 .codexbar-value { font-feature-settings: "tnum"; font-weight: 600; }
 .codexbar-dim { color: rgba(255, 255, 255, 0.55); }
-.codexbar-warning { color: #f5a623; }
-.codexbar-error { color: #ff7b72; font-size: 0.9em; }
+.codexbar-warning, .codexbar-meta.codexbar-warning { color: #f5a623; }
+.codexbar-error, .codexbar-meta.codexbar-error { color: #ff7b72; font-size: 0.9em; }
 
 .codexbar-card { padding: 10px 16px 12px; }
 .codexbar-card-header { spacing: 8px; }

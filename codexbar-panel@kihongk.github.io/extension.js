@@ -267,7 +267,7 @@ class BaseIndicator extends PanelMenu.Button {
         const header = new St.BoxLayout({style_class: 'codexbar-card-header'});
         header.add_child(this.icon(entry.provider, 18));
         header.add_child(label(providerName(entry.provider), 'codexbar-title', {x_expand: true}));
-        if (entry.plan) header.add_child(label(entry.plan, 'codexbar-plan'));
+        if (entry.plan) header.add_child(label(entry.plan.charAt(0).toUpperCase() + entry.plan.slice(1), 'codexbar-plan'));
         column.add_child(header);
 
         const updated = snapshot.stale ? 'Out of date' : ago(entry.updatedAt);
@@ -414,8 +414,9 @@ class MergedIndicator extends BaseIndicator {
         column.add_child(header);
         if (first) {
             column.add_child(bar(first, PROVIDERS[entry.provider]?.color));
-            const rest = entry.windows.slice(1, 3).map(window => `${windowLabel(window.label)} ${Math.round(window.displayValue)}%`);
-            column.add_child(split(`${windowLabel(first.label)} · ${first.resetText || ''}`, rest.join(' · ')));
+            column.add_child(split(windowLabel(first.label), first.resetText || ''));
+            const rest = entry.windows.slice(1, 4).map(window => `${windowLabel(window.label)} ${Math.round(window.displayValue)}%`);
+            if (rest.length) column.add_child(label(rest.join('  ·  '), 'codexbar-meta'));
         }
         item.add_child(column);
         // Switching tabs keeps the menu open, like the Mac provider switcher.
